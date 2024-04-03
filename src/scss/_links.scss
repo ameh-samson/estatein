@@ -1,3 +1,5 @@
+@use "colors.scss" as color;
+
 a {
   text-decoration: none;
   color: inherit;
@@ -11,5 +13,5 @@ a {
 a {
   font-family: inherit;
   font-size: 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }

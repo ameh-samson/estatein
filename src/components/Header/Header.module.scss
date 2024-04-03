@@ -1,0 +1,46 @@
+@use "@scss/index.scss" as color;
+
+.header {
+  background: color.$gray-15;
+  color: color.$white;
+  border-bottom: 1px solid #212121;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.25em;
+    font-weight: 500;
+
+    .logo {
+      width: 90px;
+    }
+
+    .rightCol {
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+
+      .link {
+        display: none;
+
+        @media (min-width: 768px) {
+          display: flex;
+          padding: 0.85em 1.43em;
+          border-radius: 8px;
+          border: 1px solid color.$gray-15;
+          background: color.$gray-08;
+        }
+      }
+
+      .hamburger {
+        cursor: pointer;
+        font-size: 20px;
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

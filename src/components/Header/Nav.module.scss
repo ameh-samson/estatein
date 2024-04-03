@@ -1,0 +1,29 @@
+@use "@scss/index.scss" as color;
+
+.nav {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  .linkContainer {
+    display: flex;
+    gap: 1.2em;
+
+    .link {
+      padding: 0.85em 1.43em;
+      border-radius: 8px;
+      border: 1px solid color.$gray-15;
+
+      &:hover {
+        background: color.$gray-08;
+      }
+    }
+
+    .navLinkRight {
+      margin-right: 0;
+    }
+  }
+}
